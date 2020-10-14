@@ -29,21 +29,31 @@
 .carousel{
 	height: 60vh;
 }
-@media (max-width: 740px){
-  html,
-  body,
-  header,
-	.carousel{
-	height: 100vh;
+
+
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+   .logo{
+  background-image:url('./img/logo_small_051.png');
+  } 
 }
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+ .logo{
+  background-image:url('./img/logo_small_051.png');
+  } 
 }
-@media (min-width: 800px) and max-width:850px){
-  html,
-  body,
-  header,
-	.carousel{
-	height: 100vh;
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  }
 }
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  }
 }
 </style>
  <!--добавила 1 -->	
@@ -52,33 +62,19 @@
 
     <header id="header" class="header">
         <div class="container">
-		<div class="view" style="background-image:
-				url('./img/logo.jpg');background-repeat: no-repeat; background-size: cover;">
+		<div class="logo">
 		<div class="row">
                 <div class="col-lg-12">
                   <p> </p>                   <p> </p> 
                 </div>
 			</div>
         </div>    
-		<div class="view" style="background-image:
-				url('./img/logo_small_051.png');background-repeat: no-repeat; background-size: cover;">
-        		<div class="row">
-                <div class="col-lg-12">
-                  <p> </p>                   <p> </p> 
-                </div>
-			</div>
-		</div>  		
-		<div class="row">
-                <div class="col-lg-12">
-                    <center><img src="img/logo.jpg" alt="АРФОК" class="logo"></center>
-                </div>
-			</div>
 		</div>
         <div class="container">
  <!--добавила 2 -->
 		<nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
 		<div class="container">
-			<a href="#" class="navbar-brand waves-effect">   <i class="fa fa-bars fa-2x"></i>                 </a>
+			<a href="#" class="navbar-brand waves-effect">   <i class="fa fa-bars fa-lg"></i>                 </a>
 			<button class="navbar-toggler" type="button"
 			data-toggle="collapse" data-target="#navbarContent"
 			aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
