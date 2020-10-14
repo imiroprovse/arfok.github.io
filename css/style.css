@@ -22,3 +22,9 @@ body,
 .page-footer{
 	background-color: #929FBA
 }
+.logo{
+  background-repeat: no-repeat;
+  background-position: center right calc(2.25rem / 4);
+  background-image: url("");
+  background-size: cover;
+  }
