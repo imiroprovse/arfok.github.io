@@ -7,79 +7,140 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>АРФОК</title>
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/animate.css">
   <!-- Material Design Bootstrap -->
-  <link href="../css/mdb.min.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-  <link href="../css/style.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
     <!-- Наш файл стилей -->
-    <link rel="stylesheet" href="../css/main.css">
+<link href="css/main.css" rel="stylesheet">
+ <!--добавила 1-->	
+	<style>
+  html,
+  body,
+  header,
+  .nav-item{
+  font-size: 18px;
+  color:#9eadba;
+  }
+.carousel{
+	height: 60vh;
+}
+
+
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+   .logo{
+  background-image:url('./img/logo_small_0.png');
+  } 
+.carousel{
+	height: 100vh;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+ .logo{
+  background-image:url('./img/logo_small_051.png');
+    width:419px;
+  height:70px;
+  } 
+.carousel{
+	height: 100vh;
+}
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+    width:733px;
+  height:70px;
+  }
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+</style>
+
 </head>
 <body>
 
     <header id="header" class="header">
         <div class="container">
+			<div class="logo">
+				<div class="row">
+					<div class="col-lg-12">
+ 
 
-            <div class="row">
-                <div class="col-lg-12">
-                    <center><img src="../img/logo.jpg" alt="АРФОК" class="logo"></center>
-                </div>
-			</div>
-			<div class="row">            
-				<div class="col-lg-12">
-                    <nav>
-                        <ul class="menu d-flex justify-content-center">
-                            <li class="menu__item">
-                                <a href="..\index.html"><i class="fa fa-home"></i>
-                                    Главная
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="..\html\news.html"><i class="fa fa-rss"></i>
-                                    Новости
-                                </a>
-                            </li>
-                            <li class="menu__item">
-                                <a href="..\html\struktura.html"><i class="fa fa-bars"></i>
-                                    Структура
-                                </a>
-                            </li>
-							<li class="menu__item">
-                                <a href="..\html\info.html"><i class="fa fa-info"></i>
-                                    Инфо
-                                </a>
-                            </li>
-							<li class="menu__item">
-                                <a href="..\html\foto.html"><i class="fa fa-picture-o"></i>
-                                    Фотогалерея
-                                </a>
-                            </li>
-							<li class="menu__item">
-                                <a href="..\html\preyskurant.html"><i class="fa fa-credit-card"></i>
-                                    Прейскурант
-                                </a>
-                            </li>
-							<li class="menu__item">
-                                <a href="..\html\contact.html"><i class="fa fa-envelope"></i>
-                                    Контакты
-                                </a>
-                            </li>
-							<li class="menu__item">
-                                <a href="..\html\otziv.html"><i class="fa fa-comments"></i>
-                                    Отзывы
-                                </a>
-                            </li>
-                        </ul>
-                    </nav>
+					</div>
 				</div>
-            </div>
-                <h1 class="offer__title-tr">
+			</div>    
+		</div>
+        <div class="container">
+ <!--добавила 2 -->
+		<nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+		<div class="container">
+			<a href="#" class="navbar-brand waves-effect">   <i class="fa fa-bars fa-lg"></i>                 </a>
+			<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarContent"
+			aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a href="../index.html" class="nav-link waves-effect"><i class="fa fa-home" ></i>
+                                    Главная</a>	
+					</li>									
+					<li class="nav-item">
+						<a href="html\0.html" class="nav-link waves-effect"><i class="fa fa-rss"></i>
+                                    Новости</a>
+					</li>
+					<li class="nav-item">
+						<a href="html\struktura.html" class="nav-link waves-effect"><i class="fa fa-sitemap"></i>
+                                    Структура</a>
+					</li>
+					<li class="nav-item">
+						<a href="html\info.html" class="nav-link waves-effect"><i class="fa fa-info"></i>
+                                    Инфо</a>
+					</li>
+					<li class="nav-item">
+						<a href="html\foto.html" class="nav-link waves-effect"><i class="fa fa-picture-o"></i>
+                                    Фотогалерея</a>
+					</li>
+					<li class="nav-item">
+						<a href="html\preyskurant.html" class="nav-link waves-effect"><i class="fa fa-credit-card"></i>
+                                    Прейскурант</a>
+					</li>
+					<li class="nav-item">
+						<a href="html\contact.html" class="nav-link waves-effect"><i class="fa fa-envelope"></i>
+                                    Контакты</a>
+					</li>	
+					<li class="nav-item">
+						<a href="html\otziv.html" class="nav-link waves-effect"><i class="fa fa-comments"></i>
+                                    Отзывы</a>
+					</li>																   
+				</ul>
+
+			</div>
+		</div>
+		</nav>
+ <!--добавила 2-->			
+		<div class="row">
+		<div class="col-lg-12">
+		<div class="offer">
+		<h1 class="offer__title-tr">
                  Контакты
                 </h1>	
-			
-                 <div class="offer__intro-tr">
+		
+                <div class="offer__intro-tr">
 				Контактная информация ГБУ РА « Адыгейский Республиканский Физкультурно-оздоровительный комплекс»:
                 </div>
 				<div class="offer__text-tr">						
@@ -92,8 +153,8 @@
                             </li>
                         </ul>
 				</div>
-				<div class="offer__intro-tr">
-							Доехать из разных концов города можно следующими способами:
+ 				<div class="offer__text-tr">
+							<br/>Доехать из разных концов города можно следующими способами:
                 </div>
 				<div class="offer__text-tr">						
 						<ul class="offer__text-tr">
@@ -102,16 +163,19 @@
                            </li>
                         </ul>
 				</div>
-				<div class="offer__intro-tr">
+		</div>
+		<div class="offer">		
+			<div class="offer__intro-tr">
 						Расположение комплекса на карте:
 			</div>
-				<div class="col-lg-12 ml-auto">
-				<img src="../img/karta.png" class="ipad" alt="iPad">
-				</div>				
-
+			<div style="position:relative;overflow:hidden;"><a href="https://yandex.ru/maps/1093/maykop/?utm_medium=mapframe&utm_source=maps" style="color:#eee;font-size:12px;position:absolute;top:0px;">Майкоп</a><a href="https://yandex.ru/maps/1093/maykop/?from=api-maps&ll=40.109010%2C44.596990&mode=usermaps&origin=jsapi_2_1_77&um=constructor%3AakUI4CB6t_RwQHQW7vGaxft3_nD_DALH&utm_medium=mapframe&utm_source=maps&z=17" style="color:#eee;font-size:12px;position:absolute;top:14px;">Яндекс.Карты — поиск мест и адресов, городской транспорт</a>
+			<iframe src="https://yandex.ru/map-widget/v1/-/CCQ~UOHNsA" width="100%" height="400" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+			</div>
+		</div>
+		</div>
         </div>
-   </header>
-
+        </div>
+    </header>
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
@@ -120,8 +184,6 @@
 Официальный сайт ГБУ РА "Адыгейский республиканский физкультурно-оздоровительный комплекс"
                     </div>
                 </div>
-            </div>
-            <div class="row">
                 <div class="col-md-12">
                     <div class="credits">
 Разработка и сопровождение сайта - АйТи-Эксперт.
@@ -130,5 +192,15 @@
             </div>
         </div>
     </footer>
+	 <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
 </body>
 </html>
