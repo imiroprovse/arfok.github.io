@@ -186,23 +186,5 @@ background-image:url('../img/logo_small_051.png');
   src="../js/jquery.fancybox.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
- <script>
-    $(document).ready(function () {
-        $('form').submit(function () {
-            var formID = $(this).attr('id'); // Получение ID формы
-            var formNm = $('#' + formID);
-            $.ajax({
-                type: 'POST',
-                url: '../send.php', // Обработчик формы отправки
-                data: formNm.serialize(),
-                success: function (data) {
-                    // Вывод текста результата отправки в текущей форме
-                    $(formNm).html(data);
-                }
-            });
-            return false;
-        });
-    });
-</script> 
 </body>
 </html>
