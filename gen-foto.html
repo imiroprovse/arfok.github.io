@@ -1,0 +1,365 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>АРФОК</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="../css/animate.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
+  <!-- Material Design Bootstrap -->
+<link href="./css/bootstrap.min.css" rel="stylesheet">
+<link href="./css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+<link href="./css/style.css" rel="stylesheet">
+    <!-- Наш файл стилей -->
+<link href="./css/main.css" rel="stylesheet">
+ <!--добавила 1-->	
+// MDB Lightbox Init
+$(function () {
+$("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+});
+	<style>
+  html,
+  body,
+  header,
+  .nav-item{
+  font-size: 18px;
+  color:#9eadba;
+  }
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+   .logo{
+ background-image:url('./img/logo_small_0.png');
+  width:308px;
+  height:66px;
+  } 
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+ .logo{
+background-image:url('./img/logo_small_051.png');
+  width:419px;
+  height:70px;
+  } 
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+			<div class="logo">
+				<div class="row">
+					<div class="col-lg-12">
+ 					</div>
+				</div>
+			</div>    
+		</div>
+        <div class="container">
+ <!--добавила 2 -->
+		<nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+		<div class="container">
+			<a href="./index.html" class="navbar-brand waves-effect">   <i class="fa fa-bars fa-lg"></i>                 </a>
+			<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarContent"
+			aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a href="./index.html" class="nav-link waves-effect"><i class="fa fa-home" ></i>
+                                    Главная</a>	
+					</li>									
+					<li class="nav-item">
+						<a href="./html/news.html" class="nav-link waves-effect"><i class="fa fa-rss"></i>
+                                    Новости</a>
+					</li>
+					<li class="nav-item">
+						<a href="./html/struktura.html" class="nav-link waves-effect"><i class="fa fa-sitemap"></i>
+                                    Структура</a>
+					</li>
+					<li class="nav-item">
+						<a href="./html/info.html" class="nav-link waves-effect"><i class="fa fa-info"></i>
+                                    Инфо</a>
+					</li>
+					<li class="nav-item">
+						<a href="./html/foto.html" class="nav-link waves-effect"><i class="fa fa-picture-o"></i>
+                                    Фотогалерея</a>
+					</li>
+					<li class="nav-item">
+						<a href="./html/preyskurant.html" class="nav-link waves-effect"><i class="fa fa-credit-card"></i>
+                                    Прейскурант</a>
+					</li>
+					<li class="nav-item">
+						<a href="./html/contact.html" class="nav-link waves-effect"><i class="fa fa-envelope"></i>
+                                    Контакты</a>
+					</li>	
+					<li class="nav-item">
+						<a href="./html/otziv.html" class="nav-link waves-effect"><i class="fa fa-comments"></i>
+                                    Отзывы</a>
+					</li>																   
+				</ul>
+
+			</div>
+		</div>
+		</nav>
+ <!--добавила 2-->			
+				<div class="row">
+				<div class="col-lg-12">
+               <h1 class="offer__title-tr">
+                Общая информация
+                </h1>	
+			<div class="offer">				
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__intro">
+			Наш комплекс построен с учетом всех требований пожарной и технологической безопасности, а также продуманной схемой расположения проходов и ключевых помещений.
+				</div>
+                </div>
+				<div class="col-lg-12 ml-auto">
+				<div class="offer__intro">
+  <img src="../img/1oi.jpg" class="ipad"alt="основное фото">	
+                </div> 
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__intro">
+		Для людей с ограниченными возможностями созданы все необходимые условия: пандус, лифт, поручни, кабинет врача, указатели помещений.
+				</div>
+                </div>
+			</div>
+*******************	
+
+		
+	<!--Carousel Wrapper-->
+<div id="carousel-with-lb" class="carousel slide carousel-multi-item" data-ride="carousel">
+
+  <!--Controls-->
+  <div class="controls-top">
+    <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="prev"><i
+        class="fas fa-chevron-left"></i></a>
+    <a class="btn-floating btn-secondary" href="#carousel-with-lb" data-slide="next"><i
+        class="fas fa-chevron-right"></i></a>
+  </div>
+  <!--/.Controls-->
+
+  <!--Indicators-->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-with-lb" data-slide-to="0" class="active secondary-color"></li>
+    <li data-target="#carousel-with-lb" data-slide-to="1" class="secondary-color"></li>
+    <li data-target="#carousel-with-lb" data-slide-to="2" class="secondary-color"></li>
+  </ol>
+  <!--/.Indicators-->
+
+  <!--Slides and lightbox-->
+
+  <div class="carousel-inner mdb-lightbox" role="listbox">
+    <div id="mdb-lightbox-ui"></div>
+    <!--First slide-->
+    <div class=" carousel-item active text-center">
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\01.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\01.jpg""
+            class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\02.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\02.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\03.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\03.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\04.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\04.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\05.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src="\img\aerobika\05.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\06.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\06.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+    </div>
+    <!--/.First slide-->
+
+    <!--Second slide-->
+    <div class="carousel-item text-center">
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\07.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\07.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\08.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\08.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\09.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\09.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\10.jpg"
+          data-size="1600x1067">
+          <img src=".\img\aerobika\10.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+      <figure class="col-md-4 d-md-inline-block">
+        <a href=".\img\aerobika\10.jpg"
+          data-size="1600x1067" data-fancybox="gallery">
+          <img src=".\img\aerobika\10.jpg"
+            class="img-fluid">
+        </a>
+      </figure>
+
+    </div>
+    <!--/.Second slide-->
+
+
+
+  </div>
+  <!--/.Slides-->
+
+</div>
+<!--/.Carousel Wrapper-->		
+			
+******************			
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__intro">
+	Возле бассейна имеется бесплатная парковочная площадка. Внутренние коридоры просторны и оборудованы камерами видеонаблюдения. Для удобства отдыхающих, имеется магазин плавательных принадлежностей и автомат со сладостями и напитками.
+				</div>
+                </div>
+				<div class="col-lg-12 ml-auto">
+				<div class="offer__intro">
+  <img src="../img/1oi.jpg" class="ipad"alt="основное фото">	
+                </div> 
+				</div>
+			</div>
+			<div class="row">
+                <div class="col-lg-12">
+                    <div class="offer__intro">
+	Во всех помещениях ФОК поддерживается оптимальная температура воздуха (СанПин 2.1.2.1188-03) автоматическими системами приточно-вытяжной вентиляции с возможностью подогрева или охлаждения поступающего воздуха.<br> Поддержание температуры воды (в малом бассейне 29-30, в большом бассейне 26-28) автоматизировано. Температура воздуха +1…2 градуса к температуре воды.
+Подготовка воды бассейнов производится в соответствии с СанПин 2.1.568-96, ГОСТ Р 53491.1-2009, ГОСТ Р 53491.2-2012.			</div>
+                </div>
+		<div class="offer">		
+			<div class="offer__intro-tr">
+						Система подготовки воды имеет три ступени (при необходимых двух):
+			</div>
+ 		<div class="offer">	
+		<div class="offer__intro">	
+1. Фильтрация всей воды, находящейся в бассейне, непрерывным циклом через стационарные фильтры с песчаным наполнителем<br>
+2. Обеззараживание воды химреагентами<br>
+а) автоматизированная система ввода хлорсодержащего реагента (гипохлорит натрия) и поддержания оптимального уровня pH (кислотно-щелочной баланс)<br>
+б) автоматизированный и ручной ввод средств не содержащих вредных веществ и предназначенных для удаления из воды мелкодисперсных и коллоидных загрязнений, предотвращающих появление в воде водорослей, бактерий и грибков, удаления ионов металлов<br>
+3. Установка обеззараживания воды ультрафиолетовым излучением.
+Первоначальное наполнение бассейнов и их подпитка производятся питьевой водой из водопроводной сети г.Майкопа.
+</div>	
+</div>		
+			</div>			
+			</div>
+
+				</div>
+				</div>
+        </div>
+			
+    </header>
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../index.html"><i class="fa fa-map-marker" ></i> Главная</a></li>
+    <li class="breadcrumb-item"><a href="../html/info.html">Инфо</a></li>
+    <li class="breadcrumb-item active">Общая информация</li>
+  </ol>
+</nav> 
+ <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title__title">
+Официальный сайт ГБУ РА "Адыгейский республиканский физкультурно-оздоровительный комплекс"
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="credits">
+Разработка и сопровождение сайта - АйТи-Эксперт.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	 <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+  <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+</body>
+</html>
