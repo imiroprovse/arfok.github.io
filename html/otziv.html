@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>АРФОК</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" >
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link href="../css/animate.css" rel="stylesheet" >
+  <!-- Material Design Bootstrap -->
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+	<link href="../css/style.css" rel="stylesheet">
+    <!-- Наш файл стилей -->
+	<link href="../css/main.css" rel="stylesheet">
+ <!--добавила 1-->	
+	<style>
+  html,
+  body,
+  header,
+  .nav-item{
+  font-size: 18px;
+  color:#9eadba;
+  }
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+   .logo{
+ background-image:url('../img/logo_small_0.png');
+  width:308px;
+  height:66px;
+  } 
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+ .logo{
+background-image:url('../img/logo_small_051.png');
+  width:419px;
+  height:70px;
+  } 
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+.logo{
+  background-image:url('../img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+.logo{
+  background-image:url('../img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+</style>
+
+</head>
+<body>
+
+    <header id="header" class="header">
+        <div class="container">
+			<div class="logo">
+				<div class="row">
+					<div class="col-lg-12">
+ 					</div>
+				</div>
+			</div>    
+		</div>
+        <div class="container">
+		<nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+		<div class="container">
+			<a href="../index.html" class="navbar-brand waves-effect">   <i class="fa fa-bars fa-lg"></i>                 </a>
+			<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarContent"
+			aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+				<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a href="../index.html" class="nav-link waves-effect"><i class="fa fa-home" ></i>
+                                    Главная</a>	
+					</li>									
+					<li class="nav-item">
+						<a href="../html/news.html" class="nav-link waves-effect"><i class="fa fa-rss"></i>
+                                    Новости</a>
+					</li>
+					<li class="nav-item">
+						<a href="../html/struktura.html" class="nav-link waves-effect"><i class="fa fa-sitemap"></i>
+                                    Структура</a>
+					</li>
+					<li class="nav-item">
+						<a href="../html/info.html" class="nav-link waves-effect"><i class="fa fa-info"></i>
+                                    Инфо</a>
+					</li>
+					<li class="nav-item">
+						<a href="../html/foto.html" class="nav-link waves-effect"><i class="fa fa-picture-o"></i>
+                                    Фотогалерея</a>
+					</li>
+					<li class="nav-item">
+						<a href="../html/preyskurant.html" class="nav-link waves-effect"><i class="fa fa-credit-card"></i>
+                                    Прейскурант</a>
+					</li>
+					<li class="nav-item">
+						<a href="../html/contact.html" class="nav-link waves-effect"><i class="fa fa-envelope"></i>
+                                    Контакты</a>
+					</li>	
+					<li class="nav-item">
+						<a href="../html/otziv.html" class="nav-link waves-effect"><i class="fa fa-comments"></i>
+                                    Отзывы</a>
+					</li>																   
+				</ul>
+
+			</div>
+		</div>
+		</nav>
+  <!-- тело  -->	
+  <div class="form-row">
+				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
+		<form id="form1" method="POST" action="../send.php">
+	<label for="recipient-mail" class="col-form-label">Имя:</label>
+    <input type="hidden" name="formData" value="Заголовок формы">
+      <input type="text" name="name" class="name form-control" placeholder="Представьтесь, пожалуйста">
+    <div class="form-group">
+        <label for="recipient-mail" class="col-form-label">Ваш email:</label>
+        <input type="text" name="email" id="recipient-mail" class="email form-control" placeholder="example@mail.ru">
+    </div>
+    <div class="form-group">
+        <label for="recipient-phone" class="col-form-label">Ваш телефон:</label>
+        <input type="text" name="phone" id="recipient-phone" class="phone form-control" placeholder="+7">
+    </div>
+    <div class="form-group">
+        <label for="message-text" class="col-form-label">Сообщение:</label>
+        <textarea name="message" id="message-text" class="message form-control" placeholder="Введите Ваше сообщение"></textarea>
+    </div>
+  <button type="submit" class="btn btn-primary">Отправить</button>
+</form>
+  </div>  </div>
+  <!-- тело -->
+        </div>
+    </header>
+	<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../index.html"><i class="fa fa-map-marker" ></i> Главная</a></li>
+    <li class="breadcrumb-item active">Отзывы</li>
+  </ol>
+</nav> 
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title__title">
+Официальный сайт ГБУ РА "Адыгейский республиканский физкультурно-оздоровительный комплекс"
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="credits">
+Разработка и сопровождение сайта - АйТи-Эксперт.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	 <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" 
+  src="../js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" 
+  src="../js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" 
+  src="../js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" 
+  src="../js/mdb.js"></script>
+  <script type="text/javascript" 
+  src="../js/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+ <script>
+    $(document).ready(function () {
+        $('form').submit(function () {
+            var formID = $(this).attr('id'); // Получение ID формы
+            var formNm = $('#' + formID);
+            $.ajax({
+                type: 'POST',
+                url: '../send.php', // Обработчик формы отправки
+                data: formNm.serialize(),
+                success: function (data) {
+                    // Вывод текста результата отправки в текущей форме
+                    $(formNm).html(data);
+                }
+            });
+            return false;
+        });
+    });
+</script> 
+</body>
+</html>
