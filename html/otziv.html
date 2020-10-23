@@ -126,6 +126,11 @@ background-image:url('../img/logo_small_051.png');
   <div class="form-row">
 				<div class="col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3">
 		<form id="form1" method="POST" action="../send.php">
+				<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="АРФОК">
+		<input type="hidden" name="admin_email" value="imiro_dom@mail.com">
+		<input type="hidden" name="form_subject" value="Отзывы">
+		<!-- END Hidden Required Fields -->
 	<label for="recipient-mail" class="col-form-label">Имя:</label>
     <input type="hidden" name="formData" value="Заголовок формы">
       <input type="text" name="name" class="name form-control" placeholder="Представьтесь, пожалуйста">
@@ -171,7 +176,9 @@ background-image:url('../img/logo_small_051.png');
     </footer>
 	 <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" 
+ <script type="text/javascript" 
+  src="../js/script.js"></script> 
+ <script type="text/javascript" 
   src="../js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
   <script type="text/javascript" 
