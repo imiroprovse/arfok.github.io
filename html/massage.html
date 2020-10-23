@@ -9,14 +9,16 @@
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
 	<link href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" rel="stylesheet" >
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="../css/animate.css" rel="stylesheet" >
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+    <link rel="stylesheet" href="../css/jquery.fancybox.min.css">
+	<link href="../css/animate.css" rel="stylesheet" >
   <!-- Material Design Bootstrap -->
-<link href="../css/bootstrap.min.css" rel="stylesheet">
-<link href="../css/mdb.min.css" rel="stylesheet">
+	<link href="../css/bootstrap.min.css" rel="stylesheet">
+	<link href="../css/mdb.min.css" rel="stylesheet">
   <!-- Your custom styles (optional) -->
-<link href="../css/style.css" rel="stylesheet">
+	<link href="../css/style.css" rel="stylesheet">
     <!-- Наш файл стилей -->
-<link href="../css/main.css" rel="stylesheet">
+	<link href="../css/main.css" rel="stylesheet">
  <!--добавила 1-->	
 	<style>
   html,
@@ -26,36 +28,27 @@
   font-size: 18px;
   color:#9eadba;
   }
-.carousel{
-	height: 60vh;
-}
-
-
 @media (max-width: 767px) {
   /* стили для xs-устройств */
    .logo{
-  background-image:url('../img/logo_small_0.png');
+ background-image:url('../img/logo_small_0.png');
+  width:308px;
+  height:66px;
   } 
-.carousel{
-	height: 100vh;
-}
 }
 @media (min-width: 768px) and (max-width: 991px) {
   /* стили для sm-устройств */
  .logo{
-  background-image:url('../img/logo_small_051.png');
-    width:419px;
+background-image:url('../img/logo_small_051.png');
+  width:419px;
   height:70px;
   } 
-.carousel{
-	height: 100vh;
-}
 }
 @media (min-width: 991px) and (max-width: 1199px) {
   /* стили для md-устройств */
 .logo{
   background-image:url('../img/logo.jpg');
-    width:733px;
+  width:733px;
   height:70px;
   }
 }
@@ -161,6 +154,13 @@
 				</div>
         </div>
     </header>
+	<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="../index.html"><i class="fa fa-map-marker" ></i> Главная</a></li>
+    <li class="breadcrumb-item"><a href="../html/struktura.html">Структура</a></li>
+    <li class="breadcrumb-item active">Массажные кабинеты</li>
+  </ol>
+</nav> 
     <footer id="footer" class="footer">
         <div class="container">
             <div class="row">
@@ -179,13 +179,20 @@
     </footer>
 	 <!-- SCRIPTS -->
   <!-- JQuery -->
-  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <script type="text/javascript" 
+  src="../js/jquery-3.3.1.min.js"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="js/popper.min.js"></script>
+  <script type="text/javascript" 
+  src="../js/popper.min.js"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <script type="text/javascript" 
+  src="../js/bootstrap.min.js"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="js/mdb.js"></script>
-
+  <script type="text/javascript" 
+  src="../js/mdb.js"></script>
+  <script type="text/javascript" 
+  src="../js/jquery.fancybox.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>
