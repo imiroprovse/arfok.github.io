@@ -1,0 +1,366 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>АРФОК</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+ <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/animate.css">
+  <!-- Material Design Bootstrap -->
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/mdb.min.css" rel="stylesheet">
+  <!-- Your custom styles (optional) -->
+<link href="css/style.css" rel="stylesheet">
+    <!-- Наш файл стилей -->
+<link href="css/main.css" rel="stylesheet">
+ <!--добавила 1-->	
+	<style>
+  html,
+  body,
+  header,
+  .nav-item{
+  font-size: 18px;
+  color:#9eadba;
+  }
+.carousel{
+	height: 60vh;
+}
+
+
+@media (max-width: 767px) {
+  /* стили для xs-устройств */
+   .logo{
+ background-image:url('./img/logo_small_0.png');
+  } 
+  width:308px;
+  height:66px;
+.carousel{
+	height: 100vh;
+}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  /* стили для sm-устройств */
+ .logo{  background-image:url('./img/logo_small_051.png');
+  width:419px;
+  height:70px;
+  } 
+.carousel{
+	height: 100vh;
+}
+}
+@media (min-width: 991px) and (max-width: 1199px) {
+  /* стили для md-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+@media (min-width: 1200px) {
+  /* стили для lg-устройств */
+.logo{
+  background-image:url('./img/logo.jpg');
+  width:733px;
+  height:70px;
+  }
+}
+</style>
+ <!--добавила 1 -->	
+</head>
+<body>
+    <header id="header" class="header">
+        <div class="container">
+			<div class="logo">
+				<div class="row">
+					<div class="col-lg-12">
+ 
+
+					</div>
+				</div>
+			</div>    
+		</div>
+        <div class="container">
+ <!--добавила 2 -->
+		<nav class="navbar navbar-expand-lg navbar-light white scrolling-navbar">
+		<div class="container">
+			<a href="#" class="navbar-brand waves-effect">
+			<i class="fa fa-bars fa-lg"></i>   
+			</a>
+			<button class="navbar-toggler" type="button"
+			data-toggle="collapse" data-target="#navbarContent"
+			aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"> </span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarContent">
+				<ul class="navbar-nav mr-auto">
+					<li class="nav-item active">
+						<a href="#" class="nav-link waves-effect"><i class="fa fa-home" ></i>
+                                    Главная</a>		
+					</li>									
+					<li class="nav-item">
+						<a href="html/news.html" class="nav-link waves-effect"><i class="fa fa-rss"></i>
+                                    Новости</a>
+					</li>
+					<li class="nav-item">
+						<a href="html/struktura.html" class="nav-link waves-effect"><i class="fa fa-sitemap"></i>
+                                    Структура</a>
+					</li>
+					<li class="nav-item">
+						<a href="html/info.html" class="nav-link waves-effect"><i class="fa fa-info"></i>
+                                    Инфо</a>
+					</li>
+					<li class="nav-item">
+						<a href="html/foto.html" class="nav-link waves-effect"><i class="fa fa-picture-o"></i>
+                                    Фотогалерея</a>
+					</li>
+					<li class="nav-item">
+						<a href="html/preyskurant.html" class="nav-link waves-effect"><i class="fa fa-credit-card"></i>
+                                    Прейскурант</a>
+					</li>
+					<li class="nav-item">
+						<a href="html/contact.html" class="nav-link waves-effect"><i class="fa fa-envelope"></i>
+                                    Контакты</a>
+					</li>	
+					<li class="nav-item">
+						<a href="html/otziv.html" class="nav-link waves-effect"><i class="fa fa-comments"></i>
+                                    Отзывы</a>
+					</li>																   
+				</ul>
+
+			</div>
+		</div>
+		</nav>
+ <!--добавила 2-->		
+ <!-- Карусель -->
+	<div id="carousel-ex" class="carousel slide carousel-fade pt-4" data-ride="carousel">
+		<ol class="carousel-indicators">
+			<li class="active" data-target="#carousel-ex" data-slide-to="0"></li>
+			<li data-target="#carousel-ex" data-slide-to="1"></li>
+			<li data-target="#carousel-ex" data-slide-to="2"></li>
+			<li data-target="#carousel-ex" data-slide-to="3"></li>
+		</ol>
+		<div class="carousel-inner" role="listbox">
+			<div class="carousel-item  active">
+				<div class="view" style="background-image:
+				url('./img/2.jpg');background-repeat: no-repeat; background-size: cover; opacity: 1;">
+				<div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+					<div class="text-center white-text mx-5 wow fideIn">
+						 <h3 class="mb-4 white-text">МАЛЫЙ БАССЕЙН
+					 </h3>
+
+					  <p class="mb-4 d-none d-md-block">					 			 </p>
+					 <a href="" target="_blank" class="btn btn-outline-whire btn-lg">доверьте своего ребенка опытным инструкторам в бассейне для детей!<i class="fa fa-cubes ml-2"> </i>
+					 </a>
+					 
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="view" style="background-image:
+				url('./img/3.jpg');background-repeat: no-repeat; background-size: cover;opacity: 1;">
+				<div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+					<div class="text-center white-text mx-5 wow fideIn">
+					 <h3 class="mb-4 white-text">БОЛЬШОЙ БАССЕЙН
+					 </h3>
+					   <a href="#"  target="_blank" class="btn btn-outline-whire btn-lg">проверьте свои силы в бассейне для профессионалов!<i class="fa fa-cubes ml-2"> </i>
+					 </a>
+					</div>
+				</div>
+				</div>
+			</div>
+			<div class="carousel-item">
+				<div class="view" style="background-image:
+				url('./img/4.jpg');background-repeat: no-repeat; background-size: cover;opacity: 1;">
+				<div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+					<div class="text-center white-text mx-5 wow fideIn">
+					 <h3 class="mb-4 white-text">ТРЕНАЖЕРНЫЙ ЗАЛ
+					 </h3>
+
+					  <p class="mb-4 d-none d-md-block">					 			 </p>
+					 <a href="" target="_blank" class="btn btn-outline-whire btn-lg">огромный выбор спортивных тренажеров, опытные тренеры помогут добиться желаемых результатов!<i class="fa fa-cubes ml-2"> </i>
+					 </a>
+					 </div>
+				</div>
+				</div>
+			</div>			
+			<div class="carousel-item">
+				<div class="view" style="background-image:
+				url('./img/1.jpg');background-repeat: no-repeat; background-size: cover;opacity: 1;">
+				<div class="mask rgba-black-strong d-flex justify-content-center align-items-center">
+					<div class="text-center white-text mx-5 wow fideIn">
+					 <h3 class="mb-4 white-text">ЗАЛ АЭРОБИКИ
+					 </h3>
+					  
+					
+					 <a href="" target="_blank" class="btn btn-outline-whire btn-lg">просторный и современный зал для занятия аэробикой к Вашим услугам!<i class="fa fa-cubes ml-2"> </i>
+					 </a>
+					
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+
+				
+			<a href="#carousel-ex" class="carousel-control-prev"
+			role="button" data-slide="prev">
+			 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+			</a>
+			<a href="#carousel-ex" class="carousel-control-next"
+			role="button" data-slide="next">
+			 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+			</a>	
+			</div>
+ <!-- Карусель -->     
+
+			<div class="row">
+                <div class="col-lg-6">
+
+                    <div class="offer">
+                        <h1 class="offer__title">
+                            Добро пожаловать на официальный сайт ГБУ РА "Адыгейский республиканский физкультурно-оздоровительный комплекс"!
+                        </h1>
+                        <div class="offer__intro">
+                           Мы открылись 22 апреля 2013 года. Штат сотрудников комплекса составляет более 50 человек. Все подразделения комплекса укомплектованы высококлассными специалистами, такими как: инструкторы тренажерного зала, тренеры по обучению детей и взрослых плаванию, административная, техническая и медицинская служба.
+                        </div>
+                        <p class="offer__text">
+                            Мы рады предложить Вам следующие услуги:
+                        </p>
+                        <ul class="offer__text">
+                            <li class="icons__item">
+                             <a href="#">
+                                    <i class="fa fa-star"></i>&emsp;Плавательный бассейн для взрослых
+                                </a>
+                            </li>
+                            <li class="icons__item">
+                             <a href="#">
+                                    <i class="fa fa-star"></i>&emsp;Детский плавательный бассейн
+                                </a>
+                            </li>
+                            <li class="icons__item">
+                              <a href="#">
+                                    <i class="fa fa-star"></i>&emsp;Тренажерный зал
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-lg-6">
+				<div class="offer">
+                        <h1 class="offer__title">
+                         
+                        </h1>
+				</div>
+				<div class="row">
+                <div class="col-lg-6">
+					<div class="row">            
+						<div class="col-lg-12">
+						<div class="feature__icon">
+							<i class="fa fa-clock-o fa-5x"></i><br />
+						</div>
+						</div>
+					</div>
+					<div class="row">            
+						<div class="col-lg-12">
+						<div class="feature__text">
+						 ПН-ПТ: 08:00 - 22:00<br />СБ,ВС: 09:00 - 20:00
+						
+						</div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="col-lg-6">
+					<div class="row">            
+					<div class="col-lg-12">
+						<div class="feature__icon">
+							<i class="fa fa-phone fa-5x"></i><br />
+						</div>
+					</div>
+					</div>
+					<div class="row">            
+						<div class="col-lg-12">
+						<div class="feature__text">
+						 (8772) 21-00-43 <br/> +7 928 470 73 94
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+
+				<div class="row">
+
+                <div class="col-lg-6">
+					<div class="row"> 
+					<div class="col-lg-12">
+						<div class="feature__icon">
+							<i class="fa fa-map-marker fa-5x"></i><br />
+						</div>
+					</div>
+					</div>
+					<div class="row">            
+						<div class="col-lg-12">
+						<div class="feature__text">
+					 Наш адрес:<br />Республика Адыгея,: г.Майкоп, ул. Гагарина 7a
+						</div>
+						</div>
+					</div>
+				</div>
+					
+				<div class="col-lg-6">
+					<div class="row">            
+						<div class="col-lg-12">
+						<div class="feature__icon">
+							<i class="fa fa-check-square-o fa-5x"></i><br />
+						</div>
+						</div>
+					</div>
+					<div class="row">            
+						<div class="col-lg-12">
+						<div class="feature__text">
+				   Перечень необходимых для посещения бассейна вещей можно <a href="html\trebovaniya.html"><em>прочитать здесь</em></a>
+						</div>
+						</div>
+					</div>
+				</div>
+				</div>
+                </div>
+            </div>
+
+        </div>
+
+    </header>
+    <footer id="footer" class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="title__title">
+Официальный сайт ГБУ РА "Адыгейский республиканский физкультурно-оздоровительный комплекс"
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="credits">
+Разработка и сопровождение сайта - АйТи-Эксперт.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+	 <!-- SCRIPTS -->
+  <!-- JQuery -->
+  <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+  <!-- Bootstrap tooltips -->
+  <script type="text/javascript" src="js/popper.min.js"></script>
+  <!-- Bootstrap core JavaScript -->
+  <script type="text/javascript" src="js/bootstrap.min.js"></script>
+  <!-- MDB core JavaScript -->
+  <script type="text/javascript" src="js/mdb.js"></script>
+
+</body>
+</html>
